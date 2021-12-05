@@ -44,7 +44,10 @@ public class Cashier extends Employee {
 	}
 	
 	/**
-	 * Calculate the cashier's productivity. 
+	 * Calculate the cashier's productivity.
+	 * To calculate productivity, we are dividing transactions by the daily limit -- both of which
+	 * are integers. Hence, the calculation will always yield an integer output. For the correct
+	 * output, cast to double.
 	 */
 	public double calculateProductivity() {
 		return (double) transactions/DAILY_TRANSACTIONS_LIMIT;
