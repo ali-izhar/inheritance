@@ -47,7 +47,7 @@ public class Cashier extends Employee {
 	 * Calculate the cashier's productivity.
 	 */
 	public double calculateProductivity() {
-		return transactions/DAILY_TRANSACTIONS_LIMIT;
+		return (double) transactions/DAILY_TRANSACTIONS_LIMIT;
 	}
 	
 	/**
